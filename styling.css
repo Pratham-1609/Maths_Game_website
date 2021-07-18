@@ -1,0 +1,149 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #ccc,rgb(252, 172, 67));
+}
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: #9dd2ea;
+    margin: 140px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #009de4;
+    position: relative;
+}
+#score{
+    background-color: #f1ff92;
+    /* color: #888e5f; */
+    padding: 8px;
+    border: 2px solid red;
+    /* This is one method of taking the score box to right
+    display: inline-block;
+    float: right; */
+    position: absolute;
+    left: 485px;
+    box-shadow: 2px 2px 0px #9da853;
+    font-weight: bold;
+}
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    /* color: white; */
+    border: 1px solid rgb(25, 0, 255);
+    padding: 8px;
+    display: none;
+}   
+#wrong{
+    position: absolute;
+    left: 260px;
+    background-color: #de401a;
+    /* color: white; */
+    border: 1px solid rgb(25, 0, 255);
+    padding: 8px;
+    color: white;
+    display: none;
+}
+#question{
+    width: 405px;
+    height: 120px;
+    margin: 55px auto 12px auto;
+    background-color: #9da0ea;
+    border: 2px solid green;
+    box-shadow: 2px 2px #535aa8;
+    font-size: 70px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    line-height: 120px;
+    border-radius: 3px;
+}
+#instruction{
+    width: 405px;
+    height: 50px;
+    background-color: #b481d9;
+    border: 2px solid green;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    line-height: 53px;
+    font-size: 23px;
+    box-shadow: 2px 2px #8153a8;
+    border-radius: 3px;
+}
+#choices{
+    height: 80px;
+    width: 405px;
+    /* border: 2px solid red; */
+    margin: 13px auto;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    float: left;
+    margin-right: 23.012px;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 80px;
+    font-size: 23px;
+}
+.box:hover, #startreset:hover{
+    background-color: #9c89f6;
+    color: white;
+    box-shadow: 2px 2px #6b54d3;
+}
+.box:active, #startreset:active{
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    /* transition: all 0.3s ease;      This is optional */
+}
+#box4{
+    margin-right: 0px;
+}
+#startreset{
+    border: 2px solid red;
+    width: 125px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 23px auto;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0,0,0,0.4);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#time{
+    width: 157px;
+    padding: 5px;
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-align: center;
+    top: 375px;
+    right: 10px;
+    background-color: rgba(181,235,36,0.8);
+    box-shadow: 2px 2px rgba(0,0,0,0.4);
+    /* visibility: hidden;   This can be also used.Difference is that it wld interact with other elements.if display used then this would not happen*/
+    display: none;
+}
+#gameover{
+    height: 200px;
+    width: 475px;
+    background: linear-gradient(#bcffa2,#10c053);
+    color: rgba(4, 0, 236, 0.966);
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 58px;
+    z-index: 2;
+    display: none;
+}
